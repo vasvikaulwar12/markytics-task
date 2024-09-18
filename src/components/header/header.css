@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #eef8ff; 
+}
+.conpany-info span{
+    margin-right:15px;
+}
+.social-icons i{
+    margin-right: 15px;
+    width: 25px;
+}
+.headerlogo{
+    width: 150px;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    margin : 0px 30px;
+    padding: 10px;
+    color: #00093c;
+    text-decoration: none;
+}
+.login-Button{
+    border: 1px solid orange;
+    border-color: linear-gradient(to right,#f73936, orange ,yellow);
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: white;
+}
+.login-Button:hover{
+    color: white;
+    background-image: linear-gradient(45deg,#f73936,orange,yellow);
+    font-size: 14px;
+}
+
+nav .active{
+    font-weight: bold;
+    border-bottom: 2px solid #00093c;
+}
+
+.serviceList{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: white;
+    padding: 10px;
+    line-height: 2;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px; 
+}
+.serviceList ul{
+    padding: 0;
+}
+.serviceList li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.serviceList li a:hover{
+   color: orange;
+}
+
+
+@media (max-width:768px){
+    .conpany-info span{
+        display: none;
+    }
+    .conpany-info i{
+        margin: 0px 10px;
+    }
+    .nav-links {
+        /* width:200px; */
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-links a{
+        margin: 10px 20px;
+        /* width: 200px; */
+        padding: 5px;
+        color: #00093c;
+        text-decoration: none;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

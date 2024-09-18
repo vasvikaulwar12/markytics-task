@@ -1,0 +1,78 @@
+.addevent{
+    width: 100%;
+    padding: 100px;
+    background-color: white;
+}
+.addevent form{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+    border-radius: 10px;
+}
+.addevent-form-inputfild{
+    padding-bottom: 15px;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.addevent-form-inputfild input{
+    width: 100%;
+    background: transparent;
+    color:black;
+    border :none;
+    outline: none;
+}
+.addevent-form-inputfild textarea{
+    width: 100%;
+    background: transparent;
+    color:black;
+    border :none;
+    outline: none;
+}
+.addevent-form-inputfild select{
+    width: 100%;
+    background: transparent;
+    color:black;
+    border :none;
+    outline: none;
+}
+.addevent-form-inputfild input::placeholder{
+    color: gray;
+    opacity: 0.7;
+}
+.submit {
+    background-image: linear-gradient(45deg,#f73936,orange,yellow);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+@media (max-width:780px) {
+    .addevent{
+        padding: 70px;
+    }
+    .addevent form{
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:580px) {
+    .addevent{
+        padding: 50px;
+    }
+    .addevent form{
+        width: 100%;
+        margin: 0px auto;
+    }
+}
